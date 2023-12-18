@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+  height: 440px;
+  background-color: #000000;
+  color: white;
+  .footerContainer {
+    width: 80%;
+    height: 440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .exclusiveBox {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      input {
+        padding-left: 15px;
+        width: 180px;
+        height: 35px;
+        background-color: transparent;
+        border: 2px solid #fafafa;
+        border-radius: 4px;
+        color: #fafafa;
+        opacity: 0.8;
+      }
+    }
+
+    .supportBox {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 175px;
+    }
+    .accountBox {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .linkBox {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .downloadBox {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .downloadImage {
+        width: 200px;
+        height: 85px;
+        display: flex;
+        gap: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .downloadIcons{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        i{
+            font-size: 20px;
+        }
+      }
+    }
+  }
+}

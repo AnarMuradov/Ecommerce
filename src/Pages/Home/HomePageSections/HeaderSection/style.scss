@@ -1,0 +1,34 @@
+.HomeHeader{
+    width: 100%;
+    height: 500px;
+    border-top: 1px solid lightgray;
+    .HomeHeaderContainer{
+        width: 80%;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        .HeaderMenu{
+            width: 230px;
+            height: 380px;
+            border-right: 1px solid lightgray;
+
+            .HeaderMenuList{
+            width: 230px;
+            height: 380px;  
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin-top: 30px;
+            }
+        }
+        .HeaderSlider{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            a{
+                display: none;
+            }
+            
+        }
+    }
+}

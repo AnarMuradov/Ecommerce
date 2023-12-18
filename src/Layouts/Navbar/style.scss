@@ -1,0 +1,92 @@
+.navHeader {
+  width: 100%;
+  height: 48px;
+  background-color: #000000;
+  color: white;
+}
+.navHeaderContainer {
+  width: 80%;
+  height: 48px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .navHeaderContainerContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .navHeaderContainerContentText {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      p {
+        font-size: 14px;
+
+        span {
+          font-weight: 600;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .navHeaderContainerContentLanguage {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    .navbarContainer{
+        width: 80%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbarName{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+
+        .navbarItems{
+            .navbarItemList{
+                display: flex;
+                gap: 50px;
+            }
+        }
+
+        .navbarSearc{
+          display: flex;
+          gap: 20px;
+          align-items: center;
+        .search{
+          position: relative;
+          width: 243px;
+          height: 38px;
+          
+          input{
+            width: 243px;
+            height: 38px;
+            background-color: #F5F5F5;
+            border: none;
+            padding-left: 7px;
+            border-radius: 3px;
+          } 
+          .fa-magnifying-glass{
+            position: absolute;
+            top: 10px;
+            right: 5px;
+          }
+        }
+        .fa-heart,.fa-cart-shopping{
+        font-size: 24px;
+        cursor: pointer;
+        }
+        }
+    }
+}

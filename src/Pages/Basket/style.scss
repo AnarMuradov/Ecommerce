@@ -1,0 +1,35 @@
+.basket{
+    width: 100%;
+    min-height: 700px;
+
+    .basketContainer{
+        width: 80%;
+        min-height: 700px;
+        margin: auto;
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            text-align: left;
+            td {  
+                border: 1px solid #ddd;
+                text-align: left;
+                padding: 15px;
+                .productName{
+                    display: flex;
+                    align-items: center;
+                
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+            th {  
+                border: 1px solid #ddd;
+                text-align: left;
+                padding: 15px;
+            }
+        
+          }
+    }
+}
