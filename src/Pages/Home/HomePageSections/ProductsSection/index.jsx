@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './style.scss'
 import { WishlistContext } from '../../../../Context/WishListContext'
 import { BasketContext } from '../../../../Context/BasketContext'
+import { Link } from 'react-router-dom'
 const Product = () => {
     const {addWishList} = useContext(WishlistContext)
     const {addBasket} = useContext(BasketContext)
@@ -34,7 +35,7 @@ const Product = () => {
           <img src={x.image} alt="" />
           <div onClick={()=>addBasket(x)} className='addToBasket'>Add To Cart</div>
           <i onClick={()=>addWishList(x)} class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-eye"></i>
+          <Link to={`/Detail/${x.id}`}><i class="fa-regular fa-eye"></i></Link>
           </div>
             <div className='productInfo'>
                 <h4>{x.name}</h4>

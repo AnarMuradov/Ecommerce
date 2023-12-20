@@ -3,6 +3,7 @@ import './style.scss'
 import Timer from '../../../../Components/FlashSalesTimer'
 import { BasketContext } from '../../../../Context/BasketContext'
 import { WishlistContext } from '../../../../Context/WishListContext'
+import { Link } from 'react-router-dom'
 const FlashSales = () => {
     const {addWishList} = useContext(WishlistContext)
     const {addBasket} = useContext(BasketContext)
@@ -42,7 +43,7 @@ const FlashSales = () => {
           <img src={x.image} alt="" />
           <div onClick={()=>addBasket(x)} className='addToBasket'>Add To Cart</div>
           <i onClick={()=>addWishList(x)} class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-eye"></i>
+          <Link to={"/Detail"}><i class="fa-regular fa-eye"></i></Link>
           </div>
             <div className='productInfo'>
                 <h4>{x.name}</h4>
